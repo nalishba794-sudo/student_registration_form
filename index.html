@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Student Registration</h1>
+        <p class="subtitle">Please fill in your details below.</p>
+
+        <form action="#" method="post">
+            <label for="full-name">Full Name</label>
+            <input type="text" id="full-name" name="full_name" placeholder="Enter your full name" required>
+
+            <label for="father-name">Father's Name</label>
+            <input type="text" id="father-name" name="father_name" placeholder="Enter your father's name" required>
+
+            <label for="registration-number">Registration Number</label>
+            <input type="text" id="registration-number" name="registration_number" placeholder="Enter registration number" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="example@email.com" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Create a password" required>
+
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" id="confirm-password" name="confirm_password" placeholder="Enter password again" required>
+
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" name="date_of_birth" required>
+
+            <fieldset>
+                <legend>Gender</legend>
+                <div class="radio-options">
+                    <label><input type="radio" name="gender" value="female" required> Female</label>
+                    <label><input type="radio" name="gender" value="male"> Male</label>
+                    <label><input type="radio" name="gender" value="other"> Other</label>
+                </div>
+            </fieldset>
+
+            <label for="department">Department</label>
+            <select id="department" name="department" required>
+                <option value="">Select your department</option>
+                <option value="BSSE">BS Software Engineering (BSSE)</option>
+                <option value="BSAI">BS Artificial Intelligence (BSAI)</option>
+                <option value="BSCS">BS Computer Science (BSCS)</option>
+                <option value="BSIT">BS Information Technology (BSIT)</option>
+            </select>
+
+            <button type="submit">Register</button>
+        </form>
+    </div>
+</body>
+</html>
